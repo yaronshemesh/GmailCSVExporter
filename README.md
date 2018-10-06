@@ -12,4 +12,7 @@ Export [self](https://github.com/yaronshemesh/GmailCSVExporter/blob/master/src/m
 1. Change the gmail query in build.gradle [(first arg)](https://github.com/yaronshemesh/GmailCSVExporter/blob/master/build.gradle#L20)
 2. Change csv file name [(second arg)](https://github.com/yaronshemesh/GmailCSVExporter/blob/master/build.gradle#L20)
 3. run gradle task (first time will open browser to allow access to your gmail account)
+```
+gradle -q run
+```
 4. Delete tokens folder to change user or scope
