@@ -1,5 +1,5 @@
 # GmailCSVExporter
-Export gmail messages to csv 
+Export [self](https://github.com/yaronshemesh/GmailCSVExporter/blob/master/src/main/java/GmailMessageToCsv.java#L58) gmail messages to csv
 >Currently only Subject, Form, To, Date and a Message snippet are supported
 
 ### Setup:
@@ -11,3 +11,4 @@ Export gmail messages to csv
 ### Usage:
 1. Change the gmail query in build.gradle [(first arg)](https://github.com/yaronshemesh/GmailCSVExporter/blob/master/build.gradle#L20)
 2. Change csv file name [(second arg)](https://github.com/yaronshemesh/GmailCSVExporter/blob/master/build.gradle#L20)
+3. Delete tokens folder to change user or scope
