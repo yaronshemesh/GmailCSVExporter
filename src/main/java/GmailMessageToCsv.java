@@ -18,6 +18,11 @@ import java.io.*;
 import java.security.GeneralSecurityException;
 import java.util.*;
 
+/**
+ * @author: yaronsh
+ * @since: {version}
+ * @date: 06/10/2018.
+ */
 public class GmailMessageToCsv {
     private static final String APPLICATION_NAME = "Gmail API Java Quickstart";
     private static final JsonFactory JSON_FACTORY = JacksonFactory.getDefaultInstance();
