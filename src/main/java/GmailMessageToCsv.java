@@ -24,7 +24,7 @@ import java.util.*;
  * @date: 06/10/2018.
  */
 public class GmailMessageToCsv {
-    private static final String APPLICATION_NAME = "Gmail API Java Quickstart";
+    private static final String APPLICATION_NAME = "Gmail Csv Message Exporter";
     private static final JsonFactory JSON_FACTORY = JacksonFactory.getDefaultInstance();
     private static final String TOKENS_DIRECTORY_PATH = "tokens";
     private static final String CSV_SEPARATOR = ",";
