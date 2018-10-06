@@ -29,21 +29,11 @@ public class GmailMessageToCsv {
     private static final String TOKENS_DIRECTORY_PATH = "tokens";
     private static final String CSV_SEPARATOR = ",";
     private static boolean includeRawMessage = false;
-    /**
-     * Global instance of the scopes required by this quickstart.
-     * If modifying these scopes, delete your previously saved tokens/ folder.
-     */
+  
     private static final List<String> SCOPES = Lists.newArrayList(GmailScopes.MAIL_GOOGLE_COM, GmailScopes.GMAIL_MODIFY, GmailScopes.GMAIL_READONLY);
     private static final List<String> SUPPORTED_HEADERS = Lists.newArrayList(MessagePartsNames.DATE.getName(), MessagePartsNames.TO.getName(), MessagePartsNames.FROM.getName(), MessagePartsNames.SUBJECT.getName());
     private static final String CREDENTIALS_FILE_PATH = "/credentials.json";
 
-    /**
-     * Creates an authorized Credential object.
-     *
-     * @param HTTP_TRANSPORT The network HTTP Transport.
-     * @return An authorized Credential object.
-     * @throws IOException If the credentials.json file cannot be found.
-     */
     private static Credential getCredentials(final NetHttpTransport HTTP_TRANSPORT) throws IOException {
         // Load client secrets.
         InputStream in = GmailMessageToCsv.class.getResourceAsStream(CREDENTIALS_FILE_PATH);
